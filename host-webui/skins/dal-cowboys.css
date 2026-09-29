@@ -1,0 +1,97 @@
+/* skin: Dallas Cowboys */
+/* Fan look: Navy, Silver, Royal, White. Not an official NFL or Cowboys product. */
+
+:root {
+  --blood: #041e42;
+  --ember: #869397;
+  --ember-2: #c5ccd0;
+  --bone: #ffffff;
+  --muted: #869397;
+  --void: #020d1c;
+  --card: #002244;
+  --card-2: #041e42;
+  --line: rgba(134, 147, 151, 0.38);
+  --ok: #869397;
+  --danger: #c45c5c;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(0, 51, 141, 0.28), transparent 36%),
+    radial-gradient(720px 360px at 100% 0%, rgba(134, 147, 151, 0.18), transparent 50%),
+    #020d1c;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(2, 13, 28, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #041e42, #869397, #ffffff, #869397, #041e42) 1;
+}
+
+.brand h1 {
+  color: #ffffff;
+  letter-spacing: 0.18em;
+  text-shadow: 0 0 16px rgba(0, 51, 141, 0.55);
+}
+
+.brand .sub::after {
+  content: " · DAL Cowboys V1";
+  color: #869397;
+}
+
+.card,
+.nowcard {
+  background: #002244;
+  border-color: rgba(134, 147, 151, 0.38);
+  box-shadow: 0 0 0 1px rgba(0, 51, 141, 0.35), 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.mode-chip {
+  background: #041e42;
+}
+.mode-chip button.on {
+  background: #ffffff;
+  color: #002244;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #ffffff;
+  color: #002244;
+  border-color: #869397;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #c5ccd0;
+  color: #041e42;
+  border-color: #ffffff;
+}
+
+.tabbar {
+  background: #020d1c;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #041e42, #869397, #ffffff, #869397, #041e42) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #002244;
+  border-color: rgba(134, 147, 151, 0.55);
+}
+.setlink span:nth-child(1) { background: #041e42; }
+.setlink span:nth-child(2) { background: #869397; }
+.setlink span:nth-child(3) { background: #ffffff; }
+
+input[type=range] {
+  accent-color: #869397;
+}
+
+.transport .icon {
+  color: #ffffff;
+}

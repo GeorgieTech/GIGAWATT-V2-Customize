@@ -22,6 +22,7 @@ Shipped examples:
 | LA Rams V1 | `host-webui/skins/la-rams.css` | Rams Royal / Sol / Bone |
 | Las Vegas Raiders V1 | `host-webui/skins/lv-raiders.css` | Silver / Black |
 | Philadelphia Eagles V1 | `host-webui/skins/phi-eagles.css` | Midnight Green / Silver |
+| Dallas Cowboys V1 | `host-webui/skins/dal-cowboys.css` | Navy / Silver / White |
 
 Add a club or season by copying a CSS file:
 
@@ -32,7 +33,7 @@ cp host-webui/skins/sports.css host-webui/skins/your-team.css
 
 Settings → **Look** lists every `host-webui/skins/*.css`. Details: [docs/SKINS.md](docs/SKINS.md).
 
-Latest themed release: **[Philadelphia Eagles V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/phi-eagles-v1)**. Also [Las Vegas Raiders V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/lv-raiders-v1) and [LA Rams V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/la-rams-v1). Fan looks, not official NFL products. This checkout ships with Eagles selected (`host-webui/skins/active`). Switch in Settings → Look.
+Latest themed release: **[Dallas Cowboys V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/dal-cowboys-v1)**. Also [Philadelphia Eagles V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/phi-eagles-v1), [Las Vegas Raiders V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/lv-raiders-v1), and [LA Rams V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/la-rams-v1). Fan looks, not official NFL products. This checkout ships with Cowboys selected (`host-webui/skins/active`). Switch in Settings → Look.
 
 ## Lab vs a shipped unit
 
