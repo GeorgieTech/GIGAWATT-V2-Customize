@@ -1,0 +1,97 @@
+/* skin: Philadelphia Eagles */
+/* Fan look: Midnight Green, Silver, Black. Not an official NFL or Eagles product. */
+
+:root {
+  --blood: #00343a;
+  --ember: #acc0c6;
+  --ember-2: #a5acaf;
+  --bone: #f4f7f7;
+  --muted: #a5acaf;
+  --void: #000d10;
+  --card: #004c54;
+  --card-2: #00343a;
+  --line: rgba(172, 192, 198, 0.32);
+  --ok: #acc0c6;
+  --danger: #c45c5c;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(0, 76, 84, 0.55), transparent 38%),
+    radial-gradient(900px 420px at 0% 100%, rgba(172, 192, 198, 0.12), transparent 55%),
+    #000d10;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(0, 13, 16, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #004c54, #acc0c6, #ffffff, #acc0c6, #004c54) 1;
+}
+
+.brand h1 {
+  color: #acc0c6;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 16px rgba(0, 76, 84, 0.65);
+}
+
+.brand .sub::after {
+  content: " · PHI Eagles V1";
+  color: #acc0c6;
+}
+
+.card,
+.nowcard {
+  background: #004c54;
+  border-color: rgba(172, 192, 198, 0.32);
+  box-shadow: 0 0 0 1px rgba(0, 76, 84, 0.5), 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.mode-chip {
+  background: #00343a;
+}
+.mode-chip button.on {
+  background: #acc0c6;
+  color: #000d10;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #acc0c6;
+  color: #004c54;
+  border-color: #ffffff;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #ffffff;
+  color: #004c54;
+  border-color: #acc0c6;
+}
+
+.tabbar {
+  background: #000d10;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #004c54, #acc0c6, #ffffff, #acc0c6, #004c54) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #004c54;
+  border-color: rgba(172, 192, 198, 0.5);
+}
+.setlink span:nth-child(1) { background: #004c54; }
+.setlink span:nth-child(2) { background: #acc0c6; }
+.setlink span:nth-child(3) { background: #ffffff; }
+
+input[type=range] {
+  accent-color: #acc0c6;
+}
+
+.transport .icon {
+  color: #f4f7f7;
+}
