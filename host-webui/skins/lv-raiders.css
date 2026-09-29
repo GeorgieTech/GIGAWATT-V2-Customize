@@ -1,0 +1,101 @@
+/* skin: Las Vegas Raiders */
+/* Fan look: Silver and Black. Not an official NFL or Raiders product. */
+
+:root {
+  --blood: #1a1a1a;
+  --ember: #a5acaf;
+  --ember-2: #d8dcde;
+  --bone: #f4f5f6;
+  --muted: #a5acaf;
+  --void: #000000;
+  --card: #111111;
+  --card-2: #1c1c1c;
+  --line: rgba(165, 172, 175, 0.35);
+  --ok: #a5acaf;
+  --danger: #c45c5c;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(165, 172, 175, 0.14), transparent 28%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(165, 172, 175, 0.04) 0 2px,
+      transparent 2px 56px
+    ),
+    #000000;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(0, 0, 0, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #000000, #a5acaf, #ffffff, #a5acaf, #000000) 1;
+}
+
+.brand h1 {
+  color: #a5acaf;
+  letter-spacing: 0.18em;
+  text-shadow: 0 0 16px rgba(165, 172, 175, 0.28);
+}
+
+.brand .sub::after {
+  content: " · LV Raiders V1";
+  color: #a5acaf;
+}
+
+.card,
+.nowcard {
+  background: #111111;
+  border-color: rgba(165, 172, 175, 0.35);
+  box-shadow: 0 0 0 1px rgba(165, 172, 175, 0.12), 0 12px 40px rgba(0, 0, 0, 0.55);
+}
+
+.mode-chip {
+  background: #000000;
+}
+.mode-chip button.on {
+  background: #a5acaf;
+  color: #000000;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #a5acaf;
+  color: #000000;
+  border-color: #d8dcde;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #d8dcde;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.tabbar {
+  background: #000000;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #000000, #a5acaf, #ffffff, #a5acaf, #000000) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #111111;
+  border-color: rgba(165, 172, 175, 0.5);
+}
+.setlink span:nth-child(1) { background: #000000; }
+.setlink span:nth-child(2) { background: #a5acaf; }
+.setlink span:nth-child(3) { background: #ffffff; }
+
+input[type=range] {
+  accent-color: #a5acaf;
+}
+
+.transport .icon {
+  color: #f4f5f6;
+}

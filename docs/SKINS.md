@@ -12,7 +12,7 @@ Skins are CSS overlays on `host-webui/crypt.css`. Pages load `/crypt.css` then `
 | `host-webui/skins/active` | Default if the jack has no saved choice |
 | `/data/crypt/skin.json` | Last pick from Settings → Look (survives a push) |
 
-Shipped examples: **stock** (product look), **halloween**, **sports**, **la-rams** (LA Rams V1 — Royal / Sol / Bone).
+Shipped examples: **stock**, **halloween**, **sports**, **la-rams** (LA Rams V1 — Royal / Sol / Bone), **lv-raiders** (Las Vegas Raiders V1 — Silver / Black).
 
 Put `/* skin: LA Rams */` on the first line of a CSS file so Settings shows that label instead of a title-cased filename.
 
