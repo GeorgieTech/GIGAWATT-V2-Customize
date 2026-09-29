@@ -5,7 +5,7 @@ set -e
 mkdir -p /data/www /data/music /data/crypt
 cp /tmp/VERSION /tmp/index.html /tmp/library.html /tmp/eq.html /tmp/karaoke.html /tmp/report.html /tmp/settings.html /tmp/crypt.css \
   /tmp/server.py /tmp/player.py /tmp/library.py /tmp/wave.py /tmp/lyrics.py /tmp/research.py /tmp/report.py /tmp/essay.py /tmp/identity.py \
-  /tmp/airplay.py /tmp/playback.py /tmp/cover.py /tmp/wifi.py /tmp/nas.py /tmp/queueing.py /tmp/savant.py /tmp/gigawatt-pulse.pa \
+  /tmp/airplay.py /tmp/playback.py /tmp/cover.py /tmp/skin.py /tmp/wifi.py /tmp/nas.py /tmp/queueing.py /tmp/savant.py /tmp/gigawatt-pulse.pa \
   /tmp/pin-hostname.sh /tmp/manifest.webmanifest /tmp/favicon.svg /tmp/icon.png /tmp/apple-touch-icon.png /data/www/
 rm -f /data/www/unison.py /data/www/peers.py /data/www/crypt_wire.py
 rm -rf /data/www/__pycache__
@@ -29,6 +29,22 @@ if [ -n "$APSRC" ]; then
   chmod +x /data/opt/airplay/run-shairport /data/opt/airplay/shairport-sync || true
   rm -f /data/opt/airplay/toslink-airplay-begin.sh /data/opt/airplay/toslink-airplay-end.sh
   chown -R RPM:RPM /data/opt/airplay
+fi
+SKSRC=""
+for cand in \
+  /tmp/gigawatt-skins/skins \
+  /tmp/gigawatt-skins \
+  /tmp/skins
+do
+  if [ -d "$cand" ] && ls "$cand"/*.css >/dev/null 2>&1; then
+    SKSRC=$cand
+    break
+  fi
+done
+if [ -n "$SKSRC" ]; then
+  rm -rf /data/www/skins
+  mkdir -p /data/www/skins
+  cp -a "$SKSRC"/. /data/www/skins/
 fi
 NASRC=""
 for cand in \

@@ -12,6 +12,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/crypt.css">
+<link rel="stylesheet" href="/skin.css" id="skin-css">
 </head>
 <body class="settings-page">
 <div class="app">
@@ -35,6 +36,14 @@
       <p class="meta" id="host-meta"></p>
       <div class="err" id="err"></div>
       <div class="okline" id="ok"></div>
+    </section>
+    <section class="card">
+      <div class="section-head">
+        <h2>Look</h2>
+        <span class="badge" id="skin-badge">Stock</span>
+      </div>
+      <p class="hint">Skins are CSS overlays on this checkout. Stock is the product look. Halloween and Sports ship as examples — add <code>host-webui/skins/your-name.css</code> for a club or season.</p>
+      <div class="mode-chip" id="skin-chips" role="group" aria-label="Look"></div>
     </section>
     <section class="card">
       <div class="section-head">
@@ -196,6 +205,52 @@ async function paintHost() {
   } catch (e) {
     $("err").textContent = "Host is not answering";
   }
+}
+function bustSkinCss() {
+  const el = document.getElementById("skin-css");
+  if (!el) return;
+  el.onload = function() {
+    const voidColor = getComputedStyle(document.documentElement).getPropertyValue("--void").trim();
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta && voidColor) meta.setAttribute("content", voidColor);
+  };
+  el.href = "/skin.css?t=" + Date.now();
+}
+async function loadSkin() {
+  const box = $("skin-chips");
+  if (!box) return;
+  try {
+    const data = await (await fetch("/api/skin")).json();
+    const skins = data.skins || [];
+    const current = data.name || "stock";
+    box.innerHTML = "";
+    skins.forEach((row) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = row.label || row.id;
+      btn.className = row.id === current ? "on" : "";
+      btn.onclick = () => setSkin(row.id);
+      box.appendChild(btn);
+    });
+    $("skin-badge").textContent = data.label || current;
+    $("skin-badge").className = "badge " + (current === "stock" ? "" : "seen");
+  } catch (e) {}
+}
+async function setSkin(name) {
+  try {
+    const res = await fetch("/api/skin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: name }),
+    });
+    const data = await res.json();
+    $("ok").textContent = data.ok ? ("Look: " + (data.label || name)) : "";
+    $("err").textContent = data.ok ? "" : (data.error || "could not set look");
+  } catch (e) {
+    $("err").textContent = "Host is not answering";
+  }
+  bustSkinCss();
+  loadSkin();
 }
 async function loadPlayback() {
   try {
@@ -395,6 +450,7 @@ $("nas-off").onclick = async () => {
   loadNas();
 };
 paintHost();
+loadSkin();
 loadPlayback();
 loadWifi(true);
 loadNas();

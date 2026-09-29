@@ -1,0 +1,51 @@
+/* Sports — field green and stadium gold. Copy this file to skins/your-team.css
+   and swap --ember / --void to match a club. Filename is the Settings id. */
+
+:root {
+  --blood: #082418;
+  --ember: #d4af37;
+  --ember-2: #f0e6b4;
+  --bone: #f4f7f4;
+  --muted: #9bb5a6;
+  --void: #06140e;
+  --card: #0c2418;
+  --card-2: #123224;
+  --line: rgba(212, 175, 55, 0.22);
+  --ok: #7dce7a;
+  --danger: #ff6b6b;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(212, 175, 55, 0.08), transparent 28%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.015) 0 2px,
+      transparent 2px 48px
+    ),
+    #06140e;
+}
+
+.topbar {
+  background: rgba(6, 20, 14, 0.92);
+  border-bottom-color: rgba(212, 175, 55, 0.28);
+}
+
+.brand h1 {
+  color: #d4af37;
+  letter-spacing: 0.14em;
+}
+
+button.primary,
+.tabbar a.on {
+  background: #d4af37;
+  color: #06140e;
+  border-color: #f0e6b4;
+}
+
+.tabbar {
+  border-top-color: rgba(212, 175, 55, 0.28);
+  background: rgba(6, 20, 14, 0.94);
+}

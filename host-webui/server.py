@@ -27,6 +27,7 @@ from lyrics import LYRICS
 from report import REPORTS
 from identity import VERSION, identity
 from cover import COVERS
+from skin import snapshot as skin_snapshot, css_bytes as skin_css, apply as skin_apply
 from airplay import AirPlay
 from playback import load_playback, save_playback
 from wifi import Wifi
@@ -505,6 +506,7 @@ class CryptApp(object):
             "uid": me.get("uid") or "",
             "ip": me.get("ip") or "",
             "version": VERSION,
+            "skin": skin_snapshot(),
             "player": snap,
             "volume": self.player.volume(),
             "index": idx,
@@ -1024,8 +1026,14 @@ class Handler(BaseHTTPRequestHandler):
                     data = fh.read()
                 self._send(200, data, ctype)
                 return
+            if raw_path == "/skin.css":
+                self._send(200, skin_css(), "text/css; charset=utf-8")
+                return
             if raw_path == "/api/status":
                 self._send(200, APP.status())
+                return
+            if raw_path == "/api/skin":
+                self._send(200, skin_snapshot())
                 return
             if raw_path == "/api/clock":
                 self._send(200, APP.clock())
@@ -1181,6 +1189,13 @@ class Handler(BaseHTTPRequestHandler):
                 self._upload()
                 return
             body = _json_body(self)
+            if path == "/api/skin":
+                ok, err = skin_apply(body.get("name"))
+                row = skin_snapshot()
+                row["ok"] = ok
+                row["error"] = err
+                self._send(200 if ok else 400, row)
+                return
             if path == "/api/play":
                 if body.get("playlist"):
                     ok = APP.play_playlist(body.get("playlist"))

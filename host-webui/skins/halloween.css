@@ -1,0 +1,50 @@
+/* Halloween — orange, bone, and void. Overrides crypt.css :root tokens. */
+
+:root {
+  --blood: #6b1208;
+  --ember: #ff6a00;
+  --ember-2: #ffb347;
+  --bone: #f6e7c1;
+  --muted: #c4a06a;
+  --void: #09050a;
+  --card: #160b10;
+  --card-2: #221018;
+  --line: rgba(255, 106, 0, 0.22);
+  --ok: #9acd32;
+  --danger: #ff5a36;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    radial-gradient(1200px 500px at 50% -10%, rgba(255, 106, 0, 0.16), transparent 55%),
+    radial-gradient(800px 400px at 100% 100%, rgba(88, 20, 90, 0.28), transparent 50%),
+    #09050a;
+}
+
+.topbar {
+  background: rgba(9, 5, 10, 0.92);
+  border-bottom-color: rgba(255, 106, 0, 0.22);
+}
+
+.brand h1 {
+  color: #ff6a00;
+  text-shadow: 0 0 18px rgba(255, 106, 0, 0.35);
+}
+
+.card {
+  box-shadow: 0 0 0 1px rgba(255, 106, 0, 0.08);
+}
+
+button.primary,
+.tabbar a.on {
+  background: #ff6a00;
+  color: #1a0a00;
+  border-color: #ffb347;
+}
+
+.tabbar {
+  border-top-color: rgba(255, 106, 0, 0.28);
+  background: rgba(9, 5, 10, 0.94);
+}
