@@ -1,0 +1,97 @@
+/* skin: Buffalo Bills */
+/* Fan look: Royal Blue, Red, White. Not an official NFL or Bills product. */
+
+:root {
+  --blood: #8a0820;
+  --ember: #c60c30;
+  --ember-2: #e23a54;
+  --bone: #ffffff;
+  --muted: #9bb0d4;
+  --void: #001433;
+  --card: #00338d;
+  --card-2: #00266c;
+  --line: rgba(198, 12, 48, 0.4);
+  --ok: #c60c30;
+  --danger: #e23a54;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(198, 12, 48, 0.22), transparent 30%),
+    radial-gradient(900px 420px at 0% 0%, rgba(0, 51, 141, 0.65), transparent 58%),
+    #001433;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(0, 20, 51, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #00338d, #ffffff, #c60c30, #ffffff, #00338d) 1;
+}
+
+.brand h1 {
+  color: #ffffff;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 16px rgba(198, 12, 48, 0.45);
+}
+
+.brand .sub::after {
+  content: " · BUF Bills V1";
+  color: #c60c30;
+}
+
+.card,
+.nowcard {
+  background: #00338d;
+  border-color: rgba(198, 12, 48, 0.4);
+  box-shadow: 0 0 0 1px rgba(0, 51, 141, 0.5), 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.mode-chip {
+  background: #00266c;
+}
+.mode-chip button.on {
+  background: #c60c30;
+  color: #ffffff;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #c60c30;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #e23a54;
+  color: #ffffff;
+  border-color: #c60c30;
+}
+
+.tabbar {
+  background: #001433;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #00338d, #ffffff, #c60c30, #ffffff, #00338d) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #00338d;
+  border-color: rgba(198, 12, 48, 0.55);
+}
+.setlink span:nth-child(1) { background: #00338d; }
+.setlink span:nth-child(2) { background: #c60c30; }
+.setlink span:nth-child(3) { background: #ffffff; }
+
+input[type=range] {
+  accent-color: #c60c30;
+}
+
+.transport .icon {
+  color: #ffffff;
+}
