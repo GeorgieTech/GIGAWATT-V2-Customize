@@ -1,0 +1,97 @@
+/* skin: LA Rams */
+/* Fan look: Rams Royal, Sol, and Bone. Not an official NFL or Rams product. */
+
+:root {
+  --blood: #00143d;
+  --ember: #ffd100;
+  --ember-2: #ffa300;
+  --bone: #f4f0e6;
+  --muted: #b7c4de;
+  --void: #00091c;
+  --card: #002a70;
+  --card-2: #003594;
+  --line: rgba(255, 209, 0, 0.28);
+  --ok: #ffd100;
+  --danger: #ff6b6b;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(255, 209, 0, 0.16), transparent 34%),
+    radial-gradient(900px 420px at 100% 0%, rgba(0, 53, 148, 0.55), transparent 58%),
+    #00091c;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(0, 9, 28, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #ffffff, #ffd100, #ffa300) 1;
+}
+
+.brand h1 {
+  color: #ffd100;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 18px rgba(255, 209, 0, 0.28);
+}
+
+.brand .sub::after {
+  content: " · LA Rams V1";
+  color: #ffd100;
+}
+
+.card,
+.nowcard {
+  background: #002a70;
+  border-color: rgba(255, 209, 0, 0.28);
+  box-shadow: 0 0 0 1px rgba(0, 53, 148, 0.4), 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.mode-chip {
+  background: #00143d;
+}
+.mode-chip button.on {
+  background: #ffd100;
+  color: #00091c;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #ffd100;
+  color: #00091c;
+  border-color: #ffa300;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #ffe14d;
+  color: #00091c;
+  border-color: #ffd100;
+}
+
+.tabbar {
+  background: #00091c;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #ffa300, #ffd100, #ffffff) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #003594;
+  border-color: rgba(255, 209, 0, 0.45);
+}
+.setlink span:nth-child(1) { background: #003594; }
+.setlink span:nth-child(2) { background: #ffd100; }
+.setlink span:nth-child(3) { background: #f4f0e6; }
+
+input[type=range] {
+  accent-color: #ffd100;
+}
+
+.transport .icon {
+  color: #f4f0e6;
+}

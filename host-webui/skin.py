@@ -12,6 +12,7 @@ STATE_DIR = os.environ.get("CRYPT_STATE", "/data/crypt")
 STATE_FILE = os.path.join(STATE_DIR, "skin.json")
 DEFAULT = "stock"
 NAME_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,31}$")
+LABEL_RE = re.compile(r"/\*\s*skin:\s*(.+?)\s*\*/", re.I)
 
 
 def _names():
@@ -28,6 +29,17 @@ def _names():
 
 
 def _label(name):
+    path = os.path.join(SKINS_DIR, name + ".css")
+    try:
+        with open(path, "r") as fh:
+            first = fh.readline()
+        hit = LABEL_RE.search(first)
+        if hit:
+            label = hit.group(1).strip()
+            if label:
+                return label
+    except OSError:
+        pass
     return str(name or "").replace("-", " ").title()
 
 

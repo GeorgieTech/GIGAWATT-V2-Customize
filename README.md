@@ -19,6 +19,7 @@ Shipped examples:
 | Stock | `host-webui/skins/stock.css` | Product Gigawatt |
 | Halloween | `host-webui/skins/halloween.css` | Orange / bone / void |
 | Sports | `host-webui/skins/sports.css` | Field green / stadium gold |
+| LA Rams V1 | `host-webui/skins/la-rams.css` | Rams Royal / Sol / Bone |
 
 Add a club or season by copying a CSS file:
 
@@ -28,6 +29,8 @@ cp host-webui/skins/sports.css host-webui/skins/your-team.css
 ```
 
 Settings → **Look** lists every `host-webui/skins/*.css`. Details: [docs/SKINS.md](docs/SKINS.md).
+
+Latest themed release: **[LA Rams V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/la-rams-v1)**. Fan look, not an official NFL or Rams product. This checkout ships with that skin selected (`host-webui/skins/active`). Switch back to Stock in Settings → Look.
 
 ## Lab vs a shipped unit
 
