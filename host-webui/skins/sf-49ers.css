@@ -1,0 +1,97 @@
+/* skin: San Francisco 49ers */
+/* Fan look: Scarlet, Gold, Black. Not an official NFL or 49ers product. */
+
+:root {
+  --blood: #6b0000;
+  --ember: #b3995d;
+  --ember-2: #d4c08a;
+  --bone: #f6f0e4;
+  --muted: #c4b48a;
+  --void: #0a0505;
+  --card: #5c0000;
+  --card-2: #aa0000;
+  --line: rgba(179, 153, 93, 0.4);
+  --ok: #b3995d;
+  --danger: #ff6b6b;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(179, 153, 93, 0.2), transparent 32%),
+    radial-gradient(900px 420px at 100% 0%, rgba(170, 0, 0, 0.45), transparent 55%),
+    #0a0505;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(10, 5, 5, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #aa0000, #b3995d, #f6f0e4, #b3995d, #aa0000) 1;
+}
+
+.brand h1 {
+  color: #b3995d;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 16px rgba(170, 0, 0, 0.45);
+}
+
+.brand .sub::after {
+  content: " · SF 49ers V1";
+  color: #b3995d;
+}
+
+.card,
+.nowcard {
+  background: #5c0000;
+  border-color: rgba(179, 153, 93, 0.4);
+  box-shadow: 0 0 0 1px rgba(170, 0, 0, 0.45), 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.mode-chip {
+  background: #2a0000;
+}
+.mode-chip button.on {
+  background: #b3995d;
+  color: #0a0505;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #b3995d;
+  color: #0a0505;
+  border-color: #d4c08a;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #d4c08a;
+  color: #0a0505;
+  border-color: #b3995d;
+}
+
+.tabbar {
+  background: #0a0505;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #aa0000, #b3995d, #f6f0e4, #b3995d, #aa0000) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #aa0000;
+  border-color: rgba(179, 153, 93, 0.55);
+}
+.setlink span:nth-child(1) { background: #aa0000; }
+.setlink span:nth-child(2) { background: #b3995d; }
+.setlink span:nth-child(3) { background: #f6f0e4; }
+
+input[type=range] {
+  accent-color: #b3995d;
+}
+
+.transport .icon {
+  color: #f6f0e4;
+}

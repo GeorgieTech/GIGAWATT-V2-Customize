@@ -27,6 +27,7 @@ class SkinTests(unittest.TestCase):
             ("phi-eagles", "/* skin: Philadelphia Eagles */\n:root { --ember: #acc0c6; }\n"),
             ("dal-cowboys", "/* skin: Dallas Cowboys */\n:root { --ember: #869397; }\n"),
             ("buf-bills", "/* skin: Buffalo Bills */\n:root { --ember: #c60c30; }\n"),
+            ("sf-49ers", "/* skin: San Francisco 49ers */\n:root { --ember: #b3995d; }\n"),
         ):
             with open(os.path.join(self.skins, name + ".css"), "w") as fh:
                 fh.write(body)
@@ -44,9 +45,10 @@ class SkinTests(unittest.TestCase):
         self.assertEqual(skin.current(), "stock")
         snap = skin.snapshot()
         ids = [row["id"] for row in snap["skins"]]
-        self.assertEqual(ids, ["buf-bills", "dal-cowboys", "halloween", "la-rams", "lv-raiders", "phi-eagles", "sports", "stock"])
+        self.assertEqual(ids, ["buf-bills", "dal-cowboys", "halloween", "la-rams", "lv-raiders", "phi-eagles", "sf-49ers", "sports", "stock"])
         labels = {row["id"]: row["label"] for row in snap["skins"]}
         self.assertEqual(labels["buf-bills"], "Buffalo Bills")
+        self.assertEqual(labels["sf-49ers"], "San Francisco 49ers")
         self.assertEqual(labels["dal-cowboys"], "Dallas Cowboys")
         self.assertEqual(labels["la-rams"], "LA Rams")
         self.assertEqual(labels["lv-raiders"], "Las Vegas Raiders")
