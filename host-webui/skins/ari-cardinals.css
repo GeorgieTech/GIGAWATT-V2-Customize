@@ -1,0 +1,97 @@
+/* skin: Arizona Cardinals */
+/* Fan look: Cardinal Red, Desert Gold, White, Black. Not an official NFL or Cardinals product. */
+
+:root {
+  --blood: #5c1426;
+  --ember: #ffb612;
+  --ember-2: #ffd056;
+  --bone: #ffffff;
+  --muted: #c9b48a;
+  --void: #0a0508;
+  --card: #6e1a2e;
+  --card-2: #97233f;
+  --line: rgba(255, 182, 18, 0.4);
+  --ok: #ffb612;
+  --danger: #e05a6a;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(255, 182, 18, 0.16), transparent 30%),
+    radial-gradient(900px 420px at 100% 0%, rgba(151, 35, 63, 0.5), transparent 55%),
+    #0a0508;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(10, 5, 8, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #97233f, #ffb612, #ffffff, #ffb612, #97233f) 1;
+}
+
+.brand h1 {
+  color: #ffb612;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 16px rgba(151, 35, 63, 0.5);
+}
+
+.brand .sub::after {
+  content: " · ARI Cardinals V1";
+  color: #ffb612;
+}
+
+.card,
+.nowcard {
+  background: #6e1a2e;
+  border-color: rgba(255, 182, 18, 0.4);
+  box-shadow: 0 0 0 1px rgba(151, 35, 63, 0.5), 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.mode-chip {
+  background: #3d0e1a;
+}
+.mode-chip button.on {
+  background: #ffb612;
+  color: #0a0508;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #ffb612;
+  color: #0a0508;
+  border-color: #ffffff;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #ffd056;
+  color: #0a0508;
+  border-color: #ffb612;
+}
+
+.tabbar {
+  background: #0a0508;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #97233f, #ffb612, #ffffff, #ffb612, #97233f) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #97233f;
+  border-color: rgba(255, 182, 18, 0.55);
+}
+.setlink span:nth-child(1) { background: #97233f; }
+.setlink span:nth-child(2) { background: #ffb612; }
+.setlink span:nth-child(3) { background: #ffffff; }
+
+input[type=range] {
+  accent-color: #ffb612;
+}
+
+.transport .icon {
+  color: #ffffff;
+}
