@@ -1,0 +1,97 @@
+/* skin: Carolina Panthers */
+/* Fan look: Panther Blue, Black, Silver. Not an official NFL or Panthers product. */
+
+:root {
+  --blood: #101820;
+  --ember: #0085ca;
+  --ember-2: #33a3db;
+  --bone: #f4f6f7;
+  --muted: #bfc0bf;
+  --void: #101820;
+  --card: #161e26;
+  --card-2: #1e2a34;
+  --line: rgba(0, 133, 202, 0.4);
+  --ok: #0085ca;
+  --danger: #c45c5c;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(0, 133, 202, 0.2), transparent 32%),
+    radial-gradient(900px 420px at 0% 0%, rgba(16, 24, 32, 0.9), transparent 58%),
+    #101820;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(16, 24, 32, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #101820, #0085ca, #bfc0bf, #0085ca, #101820) 1;
+}
+
+.brand h1 {
+  color: #0085ca;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 16px rgba(0, 133, 202, 0.45);
+}
+
+.brand .sub::after {
+  content: " · CAR Panthers V1";
+  color: #0085ca;
+}
+
+.card,
+.nowcard {
+  background: #161e26;
+  border-color: rgba(0, 133, 202, 0.4);
+  box-shadow: 0 0 0 1px rgba(0, 133, 202, 0.22), 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.mode-chip {
+  background: #0c1218;
+}
+.mode-chip button.on {
+  background: #0085ca;
+  color: #101820;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #0085ca;
+  color: #101820;
+  border-color: #bfc0bf;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #33a3db;
+  color: #101820;
+  border-color: #0085ca;
+}
+
+.tabbar {
+  background: #101820;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #101820, #0085ca, #bfc0bf, #0085ca, #101820) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #161e26;
+  border-color: rgba(0, 133, 202, 0.55);
+}
+.setlink span:nth-child(1) { background: #101820; }
+.setlink span:nth-child(2) { background: #0085ca; }
+.setlink span:nth-child(3) { background: #bfc0bf; }
+
+input[type=range] {
+  accent-color: #0085ca;
+}
+
+.transport .icon {
+  color: #f4f6f7;
+}
