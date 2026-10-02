@@ -692,6 +692,20 @@ audio#tap {
   outline: none;
   border-color: #525252;
 }
+.settings-page select {
+  background: var(--card-2);
+  border: 1px solid var(--line);
+  color: var(--bone);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font: inherit;
+  width: 100%;
+  max-width: 100%;
+}
+.settings-page select:focus {
+  outline: none;
+  border-color: var(--ember);
+}
 .row.center { justify-content: center; }
 .transport {
   display: flex;

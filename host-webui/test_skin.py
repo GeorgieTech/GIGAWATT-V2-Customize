@@ -81,6 +81,13 @@ class SkinTests(unittest.TestCase):
             fh.write("sports\n")
         self.assertEqual(skin.current(), "sports")
 
+    def test_settings_look_is_select(self):
+        path = os.path.join(os.path.dirname(__file__), "settings.html")
+        with open(path) as fh:
+            html = fh.read()
+        self.assertIn('id="skin-pick"', html)
+        self.assertNotIn("skin-chips", html)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -37,7 +37,7 @@ cp host-webui/skins/sports.css host-webui/skins/your-team.css
 # edit --ember / --void / --card
 ```
 
-Settings → **Look** lists every `host-webui/skins/*.css`. Details: [docs/SKINS.md](docs/SKINS.md).
+Settings → **Look** is a dropdown of every `host-webui/skins/*.css`. Details: [docs/SKINS.md](docs/SKINS.md).
 
 Latest themed release: **[New Orleans Saints V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/no-saints-v1)**. Also [Tampa Bay Buccaneers V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/tb-buccaneers-v1), [Arizona Cardinals V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/ari-cardinals-v1), [Seattle Seahawks V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sea-seahawks-v1), [San Francisco 49ers V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sf-49ers-v1), [Buffalo Bills V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/buf-bills-v1), [Dallas Cowboys V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/dal-cowboys-v1), [Philadelphia Eagles V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/phi-eagles-v1), [Las Vegas Raiders V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/lv-raiders-v1), and [LA Rams V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/la-rams-v1). Fan looks, not official NFL products. This checkout ships with Saints selected (`host-webui/skins/active`). Switch in Settings → Look.
 

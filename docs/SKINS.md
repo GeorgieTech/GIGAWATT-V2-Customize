@@ -20,7 +20,7 @@ Put `/* skin: LA Rams */` on the first line of a CSS file so Settings shows that
 
 1. Copy `host-webui/skins/sports.css` to `host-webui/skins/your-team.css`.
 2. Change `--ember` / `--void` / `--card` to the club colors.
-3. Push this checkout. Settings → Look lists every `*.css` in that folder.
+3. Push this checkout. Settings → Look is a dropdown of every `*.css` in that folder.
 
 Do not fork HTML for a color swap. Only add extra rules when a token is not enough (gradients, letter-spacing, button fill).
 
