@@ -12,7 +12,7 @@ Skins are CSS overlays on `host-webui/crypt.css`. Pages load `/crypt.css` then `
 | `host-webui/skins/active` | Default if the jack has no saved choice |
 | `/data/crypt/skin.json` | Last pick from Settings → Look (survives a push) |
 
-Shipped examples: **stock**, **halloween**, **sports**, **la-rams**, **lv-raiders**, **phi-eagles**, **dal-cowboys**, **buf-bills**, **sf-49ers** (San Francisco 49ers V1 — Scarlet / Gold / Black).
+Shipped examples: **stock**, **halloween**, **sports**, **la-rams**, **lv-raiders**, **phi-eagles**, **dal-cowboys**, **buf-bills**, **sf-49ers**, **sea-seahawks** (Seattle Seahawks V1 — College Navy / Action Green / Wolf Grey).
 
 Put `/* skin: LA Rams */` on the first line of a CSS file so Settings shows that label instead of a title-cased filename.
 

@@ -1,0 +1,97 @@
+/* skin: Seattle Seahawks */
+/* Fan look: College Navy, Action Green, Wolf Grey. Not an official NFL or Seahawks product. */
+
+:root {
+  --blood: #00111f;
+  --ember: #69be28;
+  --ember-2: #86d63d;
+  --bone: #f4f6f7;
+  --muted: #a5acaf;
+  --void: #00111f;
+  --card: #002244;
+  --card-2: #003366;
+  --line: rgba(105, 190, 40, 0.4);
+  --ok: #69be28;
+  --danger: #c45c5c;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(105, 190, 40, 0.18), transparent 32%),
+    radial-gradient(900px 420px at 0% 0%, rgba(0, 34, 68, 0.7), transparent 58%),
+    #00111f;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(0, 17, 31, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #002244, #69be28, #a5acaf, #69be28, #002244) 1;
+}
+
+.brand h1 {
+  color: #69be28;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 16px rgba(105, 190, 40, 0.4);
+}
+
+.brand .sub::after {
+  content: " · SEA Seahawks V1";
+  color: #69be28;
+}
+
+.card,
+.nowcard {
+  background: #002244;
+  border-color: rgba(105, 190, 40, 0.4);
+  box-shadow: 0 0 0 1px rgba(0, 34, 68, 0.5), 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.mode-chip {
+  background: #001a33;
+}
+.mode-chip button.on {
+  background: #69be28;
+  color: #00111f;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #69be28;
+  color: #00111f;
+  border-color: #a5acaf;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #86d63d;
+  color: #00111f;
+  border-color: #69be28;
+}
+
+.tabbar {
+  background: #00111f;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #002244, #69be28, #a5acaf, #69be28, #002244) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #002244;
+  border-color: rgba(105, 190, 40, 0.55);
+}
+.setlink span:nth-child(1) { background: #002244; }
+.setlink span:nth-child(2) { background: #69be28; }
+.setlink span:nth-child(3) { background: #a5acaf; }
+
+input[type=range] {
+  accent-color: #69be28;
+}
+
+.transport .icon {
+  color: #f4f6f7;
+}

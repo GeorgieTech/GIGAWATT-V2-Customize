@@ -25,6 +25,7 @@ Shipped examples:
 | Dallas Cowboys V1 | `host-webui/skins/dal-cowboys.css` | Navy / Silver / White |
 | Buffalo Bills V1 | `host-webui/skins/buf-bills.css` | Royal Blue / Red / White |
 | San Francisco 49ers V1 | `host-webui/skins/sf-49ers.css` | Scarlet / Gold / Black |
+| Seattle Seahawks V1 | `host-webui/skins/sea-seahawks.css` | College Navy / Action Green / Wolf Grey |
 
 Add a club or season by copying a CSS file:
 
@@ -35,7 +36,7 @@ cp host-webui/skins/sports.css host-webui/skins/your-team.css
 
 Settings → **Look** lists every `host-webui/skins/*.css`. Details: [docs/SKINS.md](docs/SKINS.md).
 
-Latest themed release: **[San Francisco 49ers V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sf-49ers-v1)**. Also [Buffalo Bills V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/buf-bills-v1), [Dallas Cowboys V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/dal-cowboys-v1), [Philadelphia Eagles V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/phi-eagles-v1), [Las Vegas Raiders V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/lv-raiders-v1), and [LA Rams V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/la-rams-v1). Fan looks, not official NFL products. This checkout ships with 49ers selected (`host-webui/skins/active`). Switch in Settings → Look.
+Latest themed release: **[Seattle Seahawks V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sea-seahawks-v1)**. Also [San Francisco 49ers V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sf-49ers-v1), [Buffalo Bills V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/buf-bills-v1), [Dallas Cowboys V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/dal-cowboys-v1), [Philadelphia Eagles V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/phi-eagles-v1), [Las Vegas Raiders V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/lv-raiders-v1), and [LA Rams V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/la-rams-v1). Fan looks, not official NFL products. This checkout ships with Seahawks selected (`host-webui/skins/active`). Switch in Settings → Look.
 
 ## Lab vs a shipped unit
 
