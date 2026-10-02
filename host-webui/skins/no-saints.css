@@ -1,0 +1,97 @@
+/* skin: New Orleans Saints */
+/* Fan look: Old Gold, Black, White. Not an official NFL or Saints product. */
+
+:root {
+  --blood: #101820;
+  --ember: #d3bc8d;
+  --ember-2: #e6d4b0;
+  --bone: #f7f1e6;
+  --muted: #c4b48a;
+  --void: #101820;
+  --card: #1a222c;
+  --card-2: #2a3340;
+  --line: rgba(211, 188, 141, 0.4);
+  --ok: #d3bc8d;
+  --danger: #c45c5c;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(211, 188, 141, 0.18), transparent 32%),
+    radial-gradient(900px 420px at 50% 0%, rgba(16, 24, 32, 0.9), transparent 58%),
+    #101820;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(16, 24, 32, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #101820, #d3bc8d, #ffffff, #d3bc8d, #101820) 1;
+}
+
+.brand h1 {
+  color: #d3bc8d;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 16px rgba(211, 188, 141, 0.4);
+}
+
+.brand .sub::after {
+  content: " · NO Saints V1";
+  color: #d3bc8d;
+}
+
+.card,
+.nowcard {
+  background: #1a222c;
+  border-color: rgba(211, 188, 141, 0.4);
+  box-shadow: 0 0 0 1px rgba(211, 188, 141, 0.22), 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.mode-chip {
+  background: #0c1218;
+}
+.mode-chip button.on {
+  background: #d3bc8d;
+  color: #101820;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #d3bc8d;
+  color: #101820;
+  border-color: #e6d4b0;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #e6d4b0;
+  color: #101820;
+  border-color: #d3bc8d;
+}
+
+.tabbar {
+  background: #101820;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #101820, #d3bc8d, #ffffff, #d3bc8d, #101820) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #1a222c;
+  border-color: rgba(211, 188, 141, 0.55);
+}
+.setlink span:nth-child(1) { background: #101820; }
+.setlink span:nth-child(2) { background: #d3bc8d; }
+.setlink span:nth-child(3) { background: #ffffff; }
+
+input[type=range] {
+  accent-color: #d3bc8d;
+}
+
+.transport .icon {
+  color: #f7f1e6;
+}
