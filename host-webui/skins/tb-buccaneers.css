@@ -1,0 +1,97 @@
+/* skin: Tampa Bay Buccaneers */
+/* Fan look: Buccaneers Red, Pewter, Orange, White. Not an official NFL or Buccaneers product. */
+
+:root {
+  --blood: #1c1a17;
+  --ember: #ff7900;
+  --ember-2: #ff9a3a;
+  --bone: #ffffff;
+  --muted: #b7b0a6;
+  --void: #1c1a17;
+  --card: #34302b;
+  --card-2: #4a453e;
+  --line: rgba(213, 10, 10, 0.45);
+  --ok: #ff7900;
+  --danger: #d50a0a;
+}
+
+html,
+body,
+body.is-playing {
+  background:
+    linear-gradient(180deg, rgba(213, 10, 10, 0.22), transparent 32%),
+    radial-gradient(900px 420px at 0% 0%, rgba(52, 48, 43, 0.75), transparent 58%),
+    #1c1a17;
+  color: var(--bone);
+}
+
+.topbar {
+  background: rgba(28, 26, 23, 0.94);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #34302b, #d50a0a, #ff7900, #ffffff, #34302b) 1;
+}
+
+.brand h1 {
+  color: #ff7900;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 16px rgba(213, 10, 10, 0.5);
+}
+
+.brand .sub::after {
+  content: " · TB Buccaneers V1";
+  color: #d50a0a;
+}
+
+.card,
+.nowcard {
+  background: #34302b;
+  border-color: rgba(213, 10, 10, 0.45);
+  box-shadow: 0 0 0 1px rgba(52, 48, 43, 0.6), 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.mode-chip {
+  background: #24211d;
+}
+.mode-chip button.on {
+  background: #d50a0a;
+  color: #ffffff;
+}
+
+button.primary,
+.playbig.primary,
+.tabbar a.on {
+  background: #d50a0a;
+  color: #ffffff;
+  border-color: #ff7900;
+}
+button.primary:hover,
+.playbig.primary:hover {
+  background: #ff7900;
+  color: #1c1a17;
+  border-color: #d50a0a;
+}
+
+.tabbar {
+  background: #1c1a17;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #34302b, #d50a0a, #ff7900, #ffffff, #34302b) 1;
+}
+.tabbar a.on {
+  font-weight: 800;
+}
+
+.setlink {
+  background: #34302b;
+  border-color: rgba(213, 10, 10, 0.55);
+}
+.setlink span:nth-child(1) { background: #34302b; }
+.setlink span:nth-child(2) { background: #d50a0a; }
+.setlink span:nth-child(3) { background: #ff7900; }
+
+input[type=range] {
+  accent-color: #d50a0a;
+}
+
+.transport .icon {
+  color: #ffffff;
+}

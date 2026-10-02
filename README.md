@@ -27,6 +27,7 @@ Shipped examples:
 | San Francisco 49ers V1 | `host-webui/skins/sf-49ers.css` | Scarlet / Gold / Black |
 | Seattle Seahawks V1 | `host-webui/skins/sea-seahawks.css` | College Navy / Action Green / Wolf Grey |
 | Arizona Cardinals V1 | `host-webui/skins/ari-cardinals.css` | Cardinal Red / Desert Gold / White / Black |
+| Tampa Bay Buccaneers V1 | `host-webui/skins/tb-buccaneers.css` | Buccaneers Red / Pewter / Orange / White |
 
 Add a club or season by copying a CSS file:
 
@@ -37,7 +38,7 @@ cp host-webui/skins/sports.css host-webui/skins/your-team.css
 
 Settings → **Look** lists every `host-webui/skins/*.css`. Details: [docs/SKINS.md](docs/SKINS.md).
 
-Latest themed release: **[Arizona Cardinals V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/ari-cardinals-v1)**. Also [Seattle Seahawks V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sea-seahawks-v1), [San Francisco 49ers V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sf-49ers-v1), [Buffalo Bills V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/buf-bills-v1), [Dallas Cowboys V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/dal-cowboys-v1), [Philadelphia Eagles V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/phi-eagles-v1), [Las Vegas Raiders V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/lv-raiders-v1), and [LA Rams V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/la-rams-v1). Fan looks, not official NFL products. This checkout ships with Cardinals selected (`host-webui/skins/active`). Switch in Settings → Look.
+Latest themed release: **[Tampa Bay Buccaneers V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/tb-buccaneers-v1)**. Also [Arizona Cardinals V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/ari-cardinals-v1), [Seattle Seahawks V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sea-seahawks-v1), [San Francisco 49ers V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/sf-49ers-v1), [Buffalo Bills V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/buf-bills-v1), [Dallas Cowboys V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/dal-cowboys-v1), [Philadelphia Eagles V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/phi-eagles-v1), [Las Vegas Raiders V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/lv-raiders-v1), and [LA Rams V1](https://github.com/GeorgieTech/GIGAWATT-V2-Customize/releases/tag/la-rams-v1). Fan looks, not official NFL products. This checkout ships with Buccaneers selected (`host-webui/skins/active`). Switch in Settings → Look.
 
 ## Lab vs a shipped unit
 
